@@ -1,2 +1,2 @@
-# School-Management-System
-This application help schools to manage all activites
+# School Management System
+This web application all Schools to manage all activities.
