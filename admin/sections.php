@@ -58,18 +58,15 @@
 
                     <tbody>
                       <?php
-                      $count=1;
-                      $query = mysqli_query($db_conn, 'SELECT * FROM section');
-                      while ($section = mysqli_fetch_object($query)) {?>
-
-                      <!-- // $count = 1;
-                      // $args = array(
-                      //   'type' => 'section',
-                      //   'status' => 'publish',
-                      // );
-                      // $sections = get_posts($args);
-                      // foreach($sections as $section) {?> -->
-                      <tr>
+                      $count = 1;
+                      $args = array(
+                        'type' => 'section',
+                        'status' => 'publish',
+                      );
+                      $section = get_posts($args);
+                      foreach($sections as $section) {?>
+                      
+                        <tr>
                         <td><?=$count++?></td>
                         <td><?=$section->title?></td>
                         <td></td>
